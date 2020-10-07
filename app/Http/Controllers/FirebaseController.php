@@ -29,8 +29,8 @@ class FirebaseController extends Controller
             ->create();*/
         try {
             $createPost = $this->db->getReference('blog/posts')->push([
-                'title' => 'Laravel 6',
-                'body' => 'This is really a cool database that is managed in real time.'
+                'title' => 'New Test',
+                'body' => 'Firebase real time database testing'
             ]);
         } catch (DatabaseException $e) {
             print_r($e);
